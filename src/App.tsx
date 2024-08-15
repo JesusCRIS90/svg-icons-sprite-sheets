@@ -35,20 +35,31 @@ function App() {
 
   return (
     <>
-      Hello World!
+      <h1>ICONS</h1>
+
+      <p>This website is under building process. Now it is used to serve SVG Icons to another personal websites.</p>
+      <p>I will make improvements in a future.</p>
+
       <SVG_Icon name="bw-tech-c" color={"#ffffff"} size={64}/>
       <SVG_Icon name="bw-tech-freeRTOS" color={"#ffffff"} size={64}/>
       <SVG_Icon name="bw-tech-STM" color={"#ffffff"} size={64}/>
       <SVG_Icon name="bw-tech-cpp" color={"#ffffff"} size={64}/>
+      <br/>
+
       <SVG_Icon name="bw-tech-qt" color={"#ffffff"} size={64}/>
       <SVG_Icon name="bw-tech-pandas" color={"#ffffff"} size={64}/>
       <SVG_Icon name="bw-tech-pygame" color={"#ffffff"} size={64}/>
       <SVG_Icon name="bw-tech-sql" color={"#ffffff"} size={64}/>
+      <br/>
+
       <SVG_Icon name="bw-tech-opencv" color={"#ffffff"} size={64}/>
       <SVG_Icon name="bw-tech-solidworks" color={"#ffffff"} size={64}/>
       <SVG_Icon name="bw-tech-catia" color={"#ffffff"} size={64}/>
       <SVG_Icon name="bw-tech-inventor" color={"#ffffff"} size={64}/>
+      <br/>
+
       <SVG_Icon name="bw-tech-matplotlib" color={"#ffffff"} size={64}/>
+    
     </>
   )
 }
