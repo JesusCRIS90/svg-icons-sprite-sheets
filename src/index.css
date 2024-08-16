@@ -12,3 +12,14 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.grid-icon-card {
+
+
+  display: grid;
+  grid-template-columns: repeat( 12, 1fr );
+  gap: 10px;
+  justify-items: center;
+
+
+}

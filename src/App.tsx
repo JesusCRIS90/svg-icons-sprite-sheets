@@ -1,12 +1,13 @@
 import { useEffect } from "react";
-import SVG_Icon from "./components/SVG_Icon";
+import { IconCard } from "./components/IconCard/IconCard";
 
-const path2svg = "../public/bw_logos.svg";
 
-const loadSprite = ( path:string, name2Sprite: string ) => {
-  
+const path2svg = "/svg-icons-sprite-sheets/bw_logos.svg";
+
+const loadSprite = (path: string, name2Sprite: string) => {
+
   // First Check
-  if ( document.querySelector(`div.${name2Sprite}`) ) 
+  if (document.querySelector(`div.${name2Sprite}`))
     return;
 
   fetch(path)
@@ -14,7 +15,7 @@ const loadSprite = ( path:string, name2Sprite: string ) => {
     .then(svg => {
 
       // Checking if exist that div - Second Check
-      if ( document.querySelector(`div.${name2Sprite}`) ) 
+      if (document.querySelector(`div.${name2Sprite}`))
         return;
 
       // Inserting div
@@ -30,7 +31,7 @@ const loadSprite = ( path:string, name2Sprite: string ) => {
 function App() {
 
   useEffect(() => {
-    loadSprite( path2svg, "svg-sprite-sheet" );
+    loadSprite(path2svg, "svg-sprite-sheet");
   }, []);
 
   return (
@@ -40,26 +41,21 @@ function App() {
       <p>This website is under building process. Now it is used to serve SVG Icons to another personal websites.</p>
       <p>I will make improvements in a future.</p>
 
-      <SVG_Icon name="bw-tech-c" color={"#ffffff"} size={64}/>
-      <SVG_Icon name="bw-tech-freeRTOS" color={"#ffffff"} size={64}/>
-      <SVG_Icon name="bw-tech-STM" color={"#ffffff"} size={64}/>
-      <SVG_Icon name="bw-tech-cpp" color={"#ffffff"} size={64}/>
-      <br/>
+      <div className="grid-icon-card">
+        <IconCard name="bw-tech-c" size={64} />
+        <IconCard name="bw-tech-freeRTOS" size={64} />
+        <IconCard name="bw-tech-STM" size={64} />
+        <IconCard name="bw-tech-cpp" size={64} />
+        <IconCard name="bw-tech-qt" size={64} />
+        <IconCard name="bw-tech-pandas" size={64} />
+        <IconCard name="bw-tech-sql" size={64} />
+        <IconCard name="bw-tech-opencv" size={64} />
+        <IconCard name="bw-tech-solidworks" size={64} />
+        <IconCard name="bw-tech-catia" size={64} />
+        <IconCard name="bw-tech-inventor" size={64} />
+        <IconCard name="bw-tech-matplotlib" size={64} />
+      </div>
 
-      <SVG_Icon name="bw-tech-qt" color={"#ffffff"} size={64}/>
-      <SVG_Icon name="bw-tech-pandas" color={"#ffffff"} size={64}/>
-      <SVG_Icon name="bw-tech-pygame" color={"#ffffff"} size={64}/>
-      <SVG_Icon name="bw-tech-sql" color={"#ffffff"} size={64}/>
-      <br/>
-
-      <SVG_Icon name="bw-tech-opencv" color={"#ffffff"} size={64}/>
-      <SVG_Icon name="bw-tech-solidworks" color={"#ffffff"} size={64}/>
-      <SVG_Icon name="bw-tech-catia" color={"#ffffff"} size={64}/>
-      <SVG_Icon name="bw-tech-inventor" color={"#ffffff"} size={64}/>
-      <br/>
-
-      <SVG_Icon name="bw-tech-matplotlib" color={"#ffffff"} size={64}/>
-    
     </>
   )
 }

@@ -1,0 +1,27 @@
+.icon-card{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 6rem;
+    max-width: 6.5rem;
+
+    padding: 1rem;
+    border-radius: 0.5rem;
+
+    background-color: beige;
+    
+    svg {
+        margin-bottom: 0.5rem;
+    }
+
+    h6 {
+        margin: 0;
+        padding: 0;
+        font-size: 1rem;
+        color: #2e2e2e;
+        text-align: center;
+    }
+}
