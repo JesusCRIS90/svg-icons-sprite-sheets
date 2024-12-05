@@ -81,6 +81,10 @@ function App() {
         <IconCard name="bw-tech-matplotlib" size={64} />
         <IconCard name="bw-tech-react" size={64} />
         <IconCard name="bw-tech-javascript" size={64} />
+        <IconCard name="bw-tech-typescript" size={64} />
+        <IconCard name="bw-tech-npm" size={64} />
+        <IconCard name="bw-tech-bash" size={64} />
+        <IconCard name="bw-tech-docker" size={64} />
         <IconCard name="bw-tech-html" size={64} />
         <IconCard name="bw-tech-css" size={64} />
       </div>
