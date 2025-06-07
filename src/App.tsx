@@ -87,6 +87,7 @@ function App() {
         <IconCard name="bw-tech-docker" size={64} />
         <IconCard name="bw-tech-html" size={64} />
         <IconCard name="bw-tech-css" size={64} />
+        <IconCard name="bw-tech-godot" size={64} />
       </div>
 
 
